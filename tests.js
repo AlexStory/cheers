@@ -24,6 +24,15 @@ QUnit.test( "postamble", function( assert ) {
 
 });
 
+QUnit.test( "create Arrays from string", function( assert ) {
+  cheer.getName('Alex');
+  assert.equal( cheer.nameArray()[0], 'A');
+
+  cheer.getName('Autumn');
+  assert.equal( cheer.nameArray()[5], 'N');
+
+});
+
 QUnit.test( "Test dom append", function( assert ) {
   cheer.getName('Alex');
   cheer.appendDom();

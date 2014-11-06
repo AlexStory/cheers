@@ -20,12 +20,15 @@ $('document').ready(function(){
     return cheer.name + ' is Great!!!'
   },
 
+  nameArray: function(){
+    return cheer.name.toUpperCase().split('');
+  },
+
   appendDom: function(){
     $('ul').empty();
     $('ul').append($('<li>' + cheer.preamble() +'</li>'));
-    var arrayName = cheer.name.toUpperCase().split('');
 
-    arrayName.forEach(function(letter){
+    cheer.nameArray().forEach(function(letter){
       if(letter === 'A' ||letter === 'E' ||letter ==='F' ||letter === 'H' ||letter === 'I' ||letter === 'L' ||letter === 'M' ||letter === 'N' || letter === 'O' ||letter ===  'R' ||letter === 'S' || letter === 'X' ){
         $('ul').append('<li>Give me an... ' + letter + '</li>');
       } else {
