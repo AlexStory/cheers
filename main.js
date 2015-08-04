@@ -37,5 +37,7 @@ $('document').ready(function(){
     })
 
     $('ul').append($('<li>' + cheer.postamble() + '</li>'));
-  }
+  },
+  
+  endings: [' is Great!!!', ' is the Best!!!', ' is Amazing!!!', ' is Wonderful!!!']
 };
