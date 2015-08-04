@@ -17,7 +17,7 @@ $('document').ready(function(){
   },
 
   postamble: function(){
-    return cheer.name + ' is Great!!!'
+    return cheer.name + cheer.endings[Math.Floor(Math.Random()*cheer.endings.length())]
   },
 
   nameArray: function(){
