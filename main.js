@@ -39,5 +39,5 @@ $('document').ready(function(){
     $('ul').append($('<li>' + cheer.postamble() + '</li>'));
   },
   
-  endings: [' is Great!!!', ' is the Best!!!', ' is Amazing!!!', ' is Wonderful!!!']
+  endings: [' is Great!!!', ' is the Best!!!', ' is Amazing!!!', ' is Wonderful!!!', ' you are special!!', ' you amaze me!!']
 };
